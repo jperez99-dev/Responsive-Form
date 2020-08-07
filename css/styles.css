@@ -1,0 +1,17 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* header styles */
+h1 {
+    text-transform: uppercase;
+}
+
+.main-header {
+    text-align: center;
+}

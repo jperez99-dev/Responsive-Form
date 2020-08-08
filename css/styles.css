@@ -7,11 +7,51 @@ body {
     margin: 0;
 }
 
+.container {
+    padding: 0px 16px;
+}
+
+p {
+    margin: 0;
+}
+
 /* header styles */
-h1 {
+.main-header h1 {
     text-transform: uppercase;
+    background: #333e49;
+    color: white;
+    margin: 0;
+    font-size: 1.3em;
+    padding: 25px 25px;
+}
+
+.main-header h2 {
+    color: #333e49;
+    margin-bottom: 7px;
+    margin-top: 25px;
+    font-size: 1.4em;
+}
+
+.main-header p {
+    margin-bottom: 30px;
+    color: #B0B0B0;
+    font-size: 1.04em;
 }
 
 .main-header {
     text-align: center;
+}
+
+.hr-upper {
+    height: 4px;
+    border: none;
+    background-color: #333e49;
+    margin-bottom: 3px;
+}
+
+.hr-lower {
+    height: 2px;
+    border: none;
+    background-color: #333e49;
+    margin-top: 0px;
 }

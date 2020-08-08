@@ -62,3 +62,25 @@ main h3 {
   color: #333e49;
   font-size: 1.25em;
 }
+
+/* form */
+input,
+select {
+  background-color: rgb(220, 220, 220);
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 3%;
+}
+
+select:focus,
+input:focus {
+  outline-color: #333e49;
+}
+
+main hr {
+  height: 2px;
+  border: none;
+  background-color: #333e49;
+  margin-top: 30px;
+}

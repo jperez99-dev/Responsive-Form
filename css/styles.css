@@ -162,6 +162,9 @@ input[type="button"] {
   border-radius: 3%;
   margin-top: 30px;
   height: 50px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .Copyright {

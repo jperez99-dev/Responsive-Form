@@ -16,7 +16,6 @@ p {
   margin: 0;
 }
 
-
 /* header styles */
 .main-header h1 {
   text-transform: uppercase;
@@ -64,8 +63,6 @@ main h3 {
   font-size: 1.25em;
 }
 
-
-
 /* global form */
 input[type="text"],
 input[type="number"],
@@ -81,7 +78,7 @@ select {
 }
 
 label {
-  color: rgb(150, 150, 150);
+  color: rgb(121, 132, 143);
   font-size: 0.9em;
 }
 
@@ -90,6 +87,16 @@ select:focus,
 input:focus,
 textarea:focus {
   outline-color: #333e49;
+}
+
+::placeholder {
+  margin-right: 20px;
+  text-align: right;
+  font-style: italic;
+  font-weight: 400;
+  font-family: "Merriweather", serif;
+  font-size: 12px;
+  color: #b0b0b0;
 }
 
 main hr {
@@ -110,13 +117,11 @@ select {
 /* lower form */
 .lower-form {
   text-align: left;
-
 }
 
 input[type="checkbox"] {
   text-align: left;
   margin: 0;
-
 }
 
 legend {
@@ -157,11 +162,10 @@ input[type="button"] {
   border-radius: 3%;
   margin-top: 30px;
   height: 50px;
-
 }
 
 .Copyright {
-  font-size: .8em;
+  font-size: 0.8em;
   color: #b0b0b0;
   text-align: center;
   margin-top: 25px;

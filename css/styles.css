@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  padding: 0px 16px;
+  padding: 1em;
 }
 
 p {
@@ -70,7 +70,6 @@ input[type="email"],
 select {
   background-color: rgb(240, 240, 240);
   border: none;
-  width: 100%;
   height: 50px;
   border-radius: 3%;
   margin-top: 10px;
@@ -106,12 +105,10 @@ main hr {
   margin-top: 30px;
 }
 
-input[id="zip-code"] {
-  width: 50%;
-}
-
 select {
   color: #b0b0b0;
+  padding-left: 10px;
+  font-weight: 600;
 }
 
 /* lower form */
@@ -119,15 +116,21 @@ select {
   text-align: left;
 }
 
+.title {
+  color: rgb(121, 132, 143);
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.format {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
 input[type="checkbox"] {
   text-align: left;
   margin: 0;
-}
-
-legend {
-  color: #b0b0b0;
-  font-size: 0.9em;
-  margin-bottom: 15px;
 }
 
 .lower-form label {
@@ -135,16 +138,13 @@ legend {
   display: inline-block;
 }
 
-.format {
-  margin: 15px 0 15px 0;
-}
-
 input[type="radio"] {
   margin: 0;
 }
 
-.bottom-legend {
-  margin-top: 15px;
+.topics {
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 #topics {
@@ -173,4 +173,60 @@ input[type="button"] {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 15em;
+}
+
+/* flex box */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-row input,
+.flex-row select {
+  flex-basis: 100%;
+}
+
+.flex-row label {
+  align-self: center;
+}
+
+/* flexbox for zipcode input */
+.flex-row-zip-code {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0px 10em;
+  }
+
+  /* flex box */
+  .flex-row {
+    flex-direction: row;
+  }
+
+  .flex-row input,
+  .flex-row select {
+    flex: 70%;
+  }
+
+  .flex-row label {
+    align-self: center;
+    flex: 30%;
+  }
+
+  .flex-row input[id="zip-code"] {
+    width: 70%;
+  }
+
+  .flex-row-zip-code label {
+    width: 30%;
+    align-self: center;
+  }
+  .flex-row-zip-code {
+    width: 100%;
+    flex-direction: row;
+  }
 }
